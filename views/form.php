@@ -106,7 +106,7 @@
         </div>
 
         <div class="captcha-row">
-            <div class="g-recaptcha" data-sitekey="<?= $_ENV['RECAPTCHA_SITE_KEY'] ?>" data-callback="captchaVerify"></div>
+            <div class="g-recaptcha" data-sitekey="<?= $_ENV['RECAPTCHA_SITE_KEY'] ?? getenv('RECAPTCHA_SITE_KEY'); ?>" data-callback="captchaVerify"></div>
             <p id="captcha-error" class="field-error">To pole jest wymagane.</p>
         </div>
 
