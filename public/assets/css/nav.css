@@ -1,0 +1,20 @@
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #dfdfdf;
+    text-decoration: none;
+    flex: 1;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    background-color: #2B0504;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #4B0907;
+}

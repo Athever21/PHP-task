@@ -1,0 +1,174 @@
+/* form.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.form-wrapper {
+    font-family: "Raleway", sans-serif;
+    max-width: 80%;
+    margin: 2.4rem auto 3rem;
+    padding: 2.2rem 2rem;
+    background-color: #f8f8f8;
+    color: #000;
+    border: 1px solid #2d2c34;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.form-header h1 {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    color: #3e4e86;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+}
+
+.form-header h1 span {
+    color: #ff6100;
+}
+
+.form-header h1::after {
+    content: "";
+    background: #ff6100;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5rem;
+    height: 2px;
+}
+
+.form-header p {
+    margin-bottom: 1.8rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 0.92rem;
+}
+
+.form-text-input {
+    width: 100%;
+    min-height: 2.7rem;
+    border: 1px solid #b1b1b6;
+    padding: 0.72rem 0.85rem;
+    margin-top: 0.35rem;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+label textarea {
+    resize: vertical;
+    min-height: 124px;
+
+}
+
+label input:focus,
+label textarea:focus {
+    border-color: #6e76ff;
+    box-shadow: 0 0 0 2px rgba(110, 118, 255, 0.25);
+}
+
+.section-block h2 {
+    font-size: 1.06rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.section-block h2::after {
+    content: ".";
+    color: #ff6100;
+    font-size: 2rem;
+}
+
+.section-block h2::before {
+    content: "";
+    font-size: 2rem;
+    height: 1.6rem;
+    width: 2px;
+    background-color: #ff6100;
+    position: absolute;
+    top: 0.5rem;
+    left: -1.5rem;
+}
+
+.grid-checkbox {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.textarea-row {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.textarea-row textarea {
+    font-family: "Raleway", sans-serif;
+}
+
+.captcha-row {
+    margin-top: -1.2rem;
+}
+
+.consent {
+    font-size: 0.83rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    line-height: 1.42;
+    margin-top: 0.45rem;
+}
+
+.consent input {
+    margin-top: 0.2rem;
+}
+
+.form-submit {
+    margin-top: 0.75rem;
+    align-self: flex-end;
+    min-width: 140px;
+    background: #010101;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 1.1rem;
+    padding: 0.8rem 5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.form-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 20px rgba(40, 89, 255, 0.35);
+    opacity: 0.94;
+}
+
+.field-error {
+    color: #c54747;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    font-weight: 600;
+    display: none;
+}
